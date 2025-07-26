@@ -15,6 +15,11 @@ const userSchema = mongoose.Schema({
     type: Array,
     default: []
   },
+  posts: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "post"
+  }
+  ]
 
 })
 
