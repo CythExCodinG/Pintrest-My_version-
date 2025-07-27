@@ -35,12 +35,20 @@ router.get('/show/post', isLoggedIn, async function (req, res, next) {
   res.render('show', { user, nav: true });
 });
 
+router.get('/feed', isLoggedIn, async function (req, res, next) {
+  const posts = await postModel.find()
+    .populate("user")
+  res.render('feed', { posts, nav: true })
+});
+
 router.get('/show/post/:postid', isLoggedIn, async function (req, res, next) {
-  const user = await userModel.
-    findOne({ username: req.session.passport.user })
-    .populate('posts')
+  // const user = await userModel.
+  //   findOne({ username: req.session.passport.user })
+  //   .populate('posts')
+  const posts = await postModel.find()
+    .populate("user")
   let matchingPost;
-  user.posts.forEach(element => {
+  posts.forEach(element => {
 
     if (element._id.toString() === req.params.postid) {
       matchingPost = element

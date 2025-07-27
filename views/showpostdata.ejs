@@ -1,6 +1,40 @@
+<!-- <% include ./partials/header.ejs %>
+  <div class="w-full h-screen bg-zinc-800 flex justify-center p-2">
+    <div class="w-[80%] bg-zinc-600 max-h-[80%] md:flex lg:flex rounded-md overflow-hidden">
+      <div class="w-2/3 h-full bg-zinc-100"><img class="w-full h-full object-cover"
+          src="/images/upload/<%= matchingPost.image %>" alt=""></div>
+      <div class="w-1/2 h-full bg-zinc-500 flex flex-col items-center justify-center p-5">
+        <h1 class="text-zinc-300 text-5xl ">
+          <%= matchingPost.title%>
+        </h1>
+        <span class="text-white text-lg mt-5">
+          <%= matchingPost.description %>
+        </span>
+      </div>
+    </div>
+  </div>
+  <% include ./partials/footer.ejs %> -->
 <% include ./partials/header.ejs %>
 
-  <div>
-    <img src="/images/upload/<%= matchingPost.image %>" alt="">
+  <div class="w-full min-h-screen bg-zinc-800 flex justify-center items-center p-2">
+    <div
+      class="w-full sm:w-[90%] md:w-[85%] lg:w-[80%] bg-zinc-600 max-h-[90%] flex flex-col md:flex-row rounded-md overflow-hidden">
+
+      <!-- Image Section -->
+      <div class="w-full md:w-2/3 h-64 md:h-auto bg-zinc-100">
+        <img class="w-full h-full object-cover" src="/images/upload/<%= matchingPost.image %>" alt="">
+      </div>
+
+      <!-- Text Section -->
+      <div class="w-full md:w-1/2 bg-zinc-500 flex flex-col items-center justify-center p-5">
+        <h1 class="text-zinc-300 text-3xl md:text-4xl lg:text-5xl text-center break-words">
+          <%= matchingPost.title %>
+        </h1>
+        <span class="text-white text-base md:text-lg mt-5 text-center break-words">
+          <%= matchingPost.description %>
+        </span>
+      </div>
+    </div>
   </div>
+
   <% include ./partials/footer.ejs %>
