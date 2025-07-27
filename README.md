@@ -31,7 +31,6 @@ A Pinterest-style full-stack website where:
     <td align="center"><img src="https://img.icons8.com/color/48/000000/nodejs.png"/><br>Node.js</td>
     <td align="center"><img src="https://img.icons8.com/ios/50/express-js.png"/><br>Express.js</td>
     <td align="center"><img src="https://img.icons8.com/color/48/000000/mongodb.png"/><br>MongoDB</td>
-    <td align="center"><img src="https://img.icons8.com/ios-filled/50/000000/ejs.png"/><br>EJS</td>
     <td align="center"><img src="https://img.icons8.com/color/48/000000/passport.png"/><br>Passport.js</td>
     <td align="center"><img src="https://img.icons8.com/plasticine/100/m.png" width="48"/><br>Multer</td>
     <td align="center"><img src="https://img.icons8.com/color/48/000000/tailwindcss.png"/><br>Tailwind CSS</td>
