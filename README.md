@@ -44,3 +44,60 @@ A Pinterest-style full-stack website where:
 
 > 📌 Add screenshots here if you have them (upload to `/public/screenshots/` or use external link):
 
+2️⃣ Install dependencies
+bash
+Copy
+Edit
+npm install
+3️⃣ Setup environment variables
+Create a .env file in the root folder:
+
+env
+Copy
+Edit
+MONGO_URI=your_mongodb_connection_string
+SESSION_SECRET=your_secret
+💡 If you're using local MongoDB, use mongodb://localhost:27017/pinterest_clone
+
+4️⃣ Run the app
+bash
+Copy
+Edit
+node app.js
+App will run at: http://localhost:3000
+
+🗂 Folder Structure
+bash
+Copy
+Edit
+Pintrest-My_version-/
+│
+├── app.js                  # Entry point
+├── models/                 # Mongoose models (User, Post, etc.)
+├── routes/                 # Express routes
+├── views/                  # EJS templates
+├── public/                 # Static files (CSS, JS, images)
+├── uploads/                # Uploaded images
+├── .env                    # Environment variables
+└── README.md      
+
+🚀 Live Site
+Hosted on Render
+🔗 https://pintrest-my-version.onrender.com
+
+🧠 Future Improvements
+💖 Like or save pins
+
+💬 Comments system
+
+🧭 Search functionality
+
+🏷️ Tag filtering
+
+📱 Convert to React or Next.js
+
+👨‍💻 Author
+Made with ❤️ by Rohit Bhalekar
+
+
+
