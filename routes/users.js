@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://127.0.0.1:27017/pin")
+mongoose.connect("mongodb+srv://Admin:rohitpintrest@admin.fetmeom.mongodb.net/?retryWrites=true&w=majority&appName=Admin")
 //It offers using serializeuser and deserializeuser
 const plm = require('passport-local-mongoose')
 
